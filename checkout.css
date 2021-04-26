@@ -1,0 +1,122 @@
+#check-heading{
+    margin: 12% 0 0 8%;
+    font-size: 36px;
+    font-weight: 500;
+}
+#total-items,#totalcount-div h4{
+        font-size: 24px;
+        color: rgba(0, 0, 0, 0.8);
+        font-weight: 400;
+        margin: 3% 0 1% 8%;
+}
+#twoSections{
+    display:flex;
+    justify-content: start;
+    margin:3% 8%;
+    position:relative;
+}
+#totalcount-div{
+    width: 35%;
+    height: fit-content;
+    margin-left: 3%;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px #ccc;
+    border-radius: 5px;
+    padding: 16px;
+    position: absolute;
+    left:50%;
+}
+#items-container{
+    display:flex;
+    flex-direction: column;
+}
+.item-card{
+    display: flex;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px #ccc;
+    border-radius: 5px;
+    background-color: white;
+    max-width: 600px;
+    padding: 16px;
+    margin-bottom: 16px;
+    height:fit-content;
+}
+.leftside{
+    width:90px;
+    margin-right: 29px;
+}
+h4,p{
+    margin:0;
+    margin-bottom:10px;
+}
+.imagesCheck{
+    width: 100%;
+    height: 70%;
+    border-radius: 5px;
+}
+#totalcount-div p{
+    margin:3% 0 3% 8%;
+}
+.placeBtnDiv{
+    background-color: #009688;
+    width:35%;
+    height: 20px;
+    padding:10px;
+    margin-left: 8%;
+    border: none;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 50%);
+}
+#place-order{
+    margin-top: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 2px;
+    text-decoration: none;
+    width:fit-content;
+}
+@media(max-width:600px){
+    #check-heading{
+        margin:21% 0 0 4%;
+        font-size:28px;
+    }
+    #total-items,#totalcount-div h4{
+        font-size:18px;
+        margin-left:4%;
+    }
+    #twoSections{
+        margin-left:4%;
+    }
+    .item-card{
+        width:296px;
+    }
+    .leftside{
+        width:127px;
+        margin-right:8px;
+    }
+    #totalcount-div{
+        width:40%;
+        left:61%;
+    }
+    #totalcount-div p{
+        margin-left:5%;
+        margin-bottom: 9%;
+    }
+    #totalcount-div p span:last-child{
+        font-size: 19px;
+    }
+    .placeBtnDiv{
+        width:59%;
+        height:27px;
+        padding:0px;
+        margin-left:4%;
+
+    }
+    #place-order{
+        font-size:12px;
+    }
+}
+

@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;800&display=swap');
+body{
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    height: fit-content;
+}
+#count{
+    top:-3px;
+}
+#main-container{
+    margin-top:7%;
+    margin-bottom: 10%;
+    display: flex;
+}
+#left-section{
+    width:35%;
+    margin-top: 3%;
+    margin-left:4%;
+}
+#right-section{
+    margin-left:7%;
+    width:65%;
+    display:flex;
+    flex-direction: column;
+}
+h1{
+    font-weight: 300;
+    font-size: 44px;
+    letter-spacing: -2px;
+    margin-bottom:3%;
+}
+h3,h4{
+    font-weight: 200;
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: rgb(27, 25, 25);
+    margin:0;
+    margin-bottom:3%;
+}
+p{
+    font-size: 18px;
+    font-weight: 300;
+    color: #86939e;
+    margin:0;
+    margin-bottom:3%;
+}
+#rate{
+    color:#009688;
+    font-weight: 500;
+    font-size: 25px;
+}
+.preview{
+    width:100%;
+    height: 100%;
+}
+#product-images{
+    display:flex;
+    
+}
+.images{
+    width: 15%;
+    height:20%;
+    margin:1%;
+    padding:2px;
+    box-sizing: border-box;
+}
+.images:hover{
+    border:2px solid #009688;
+    border-radius:6px;
+}
+.bttnDiv{
+    margin-top:5%;
+    margin-left:10%;
+    background-color: #009688;
+    width:18%;
+    height: 20px;
+    padding:10px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 50%);
+    width:fit-content;
+}
+.bigger{
+    transform: scale(1.2,1.2);
+    
+}
+@media(max-width:600px){
+    #main-container{
+        margin-top:14%;
+    }
+    #left-section{
+        width:40%;
+    }
+    #right-section{
+        width:52%;
+    }
+    h1{
+        font-weight:400;
+        font-size:29px;
+        letter-spacing: 0px;
+    }
+    h3,h4{
+        font-size:16px;
+        font-weight:400;
+    }
+    p{
+        font-size:13px;
+    }
+    .bttnDiv{
+        margin-left:6%;
+        padding:7px;
+        font-size: 12px;
+        
+    }
+}

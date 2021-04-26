@@ -1,0 +1,86 @@
+#count0{
+    position: absolute;
+    width:18px;
+    height:18px;
+    font-size:12px;
+    background-color: #009688;
+    color:white;
+    font-weight: 600;
+    text-align: center;
+    top:-2px;
+    left:14px;
+    border-radius: 50%; 
+}
+#section{
+    width:100%;
+    margin-top:9%;
+    height: 42vh;
+    text-align: center;
+}
+#tick{
+    margin:0 auto;
+    background-color: #07e207;
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 1px 2px 3px #ccc;
+    transform: scale(1,1);
+    animation-name:scaling;
+    animation-name:1s;
+    
+}
+/* @keyframes scaling{
+    0%{
+        transform: scale(2,2);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+} */
+
+#tick::before{
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    height: 30%;
+    width: 4px;
+    background-color: #f9fbfc;
+    content: "";
+    transform: translate(16px,-2px) rotate(-45deg);
+    transform-origin: left bottom;
+    animation-name:rotating;
+    animation-duration:0.3s;
+    
+}
+@keyframes rotating{
+    0%{
+        transform:translate(16px,-2px) rotate(50deg) scale(2);
+        
+    }
+    100%{
+        transform:translateX(16px,-2px) rotate(-45deg) scale(1);
+        
+    }
+}
+#tick::after{
+    position: absolute;
+    left: 0;
+    bottom: 19%;
+    height: 4px;
+    width: 60%;
+    background-color: #f8fafc;
+    content: "";
+    transition: 2s;
+    transform: translate(16px,-2px) rotate(-45deg);
+    transform-origin: left bottom;
+    animation-name:rotating;
+    animation-duration:0.3s;
+}
+@media(max-width:600px){
+    #section{
+        margin-top:32%;
+    }
+}
+
